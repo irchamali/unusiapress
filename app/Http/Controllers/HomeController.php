@@ -34,7 +34,7 @@ class HomeController extends Controller
         $produkdb = Produk::leftJoin('kategori','produk.id_kategori','=','kategori.id')
                     ->select('kategori.nama_kategori','produk.*');
         $data = [
-            'title'     => 'LaraToko',
+            'title'     => 'Unusia Press',
             'kategori'  => Kategori::All(),
             'produk'    => $produkdb->latest()->paginate(8),
         ];

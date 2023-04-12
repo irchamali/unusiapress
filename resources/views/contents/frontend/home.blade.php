@@ -44,11 +44,11 @@
                     <div class="col-sm-7">
                         <div class="official-content">
                             <h4><b>Unusia Press</b></h4>
-                            <p>Saat ini Unusia Press telah ber ISBN dan akan terus berkembang</p>
+                            <p>Saat ini Unusia Press telah merealese karya-karya tulisan terbaik Dosen berupa buku cetak dan digital ber-ISBN yang dapat diperjual belikan secara legal.</p>
                         </div>
                     </div>
                     <div class="col-sm-5">
-                        <img src="{{ asset('assets/img/offline_store.jpeg') }}" class="img-fluid w-100">
+                        <img src="{{ asset('assets/img/library-catalogue.jpg') }}" class="img-fluid w-100">
                     </div>
                 </div>
             </div>
