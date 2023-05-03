@@ -19,6 +19,7 @@ class Produk extends Model
         "nama_produk",
         "deskripsi",
         "harga_jual",
+        "harga_jual2",
     ];
 
 }

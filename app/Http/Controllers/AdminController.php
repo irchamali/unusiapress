@@ -32,7 +32,7 @@ class AdminController extends Controller
 
     public function index(){
         $data = [
-            'title' => 'Admin Toko'
+            'title' => 'Admin Unusia Press'
         ];
         return view('contents.admin.home', $data);
     }
@@ -76,6 +76,7 @@ class AdminController extends Controller
             "nama_produk"   => "required",
             "deskripsi"     => "required",
             "harga_jual"    => "required",
+            "harga_jual2"    => "required",
         ]);
 
         if($validator->passes()){
@@ -92,6 +93,7 @@ class AdminController extends Controller
                 'nama_produk'   => $request->get("nama_produk"),
                 'deskripsi'     => $request->get("deskripsi"),
                 'harga_jual'    => $request->get("harga_jual"),
+                'harga_jual2'   => $request->get("harga_jual2"),
                 'created_at'    => date('Y-m-d H:i:s'),
             ]);
             return redirect()->back()->with("success"," Berhasil Insert Data ! ");
@@ -109,6 +111,7 @@ class AdminController extends Controller
             "nama_produk"   => "required",
             "deskripsi"     => "required",
             "harga_jual"    => "required",
+            "harga_jual2"    => "required",
         ]);
 
         if($validator->passes()){
@@ -139,6 +142,7 @@ class AdminController extends Controller
                 'nama_produk'   => $request->get("nama_produk"),
                 'deskripsi'     => $request->get("deskripsi"),
                 'harga_jual'    => $request->get("harga_jual"),
+                'harga_jual2'    => $request->get("harga_jual2"),
                 'updated_at'    => date('Y-m-d H:i:s'),
             ]);
 

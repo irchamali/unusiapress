@@ -13,7 +13,7 @@ use App\Http\Controllers;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+// Route::get('auth', [Controllers\Auth\RegisterController::class, 'register'])->name('auth.create');
 Route::get('/', [Controllers\HomeController::class, 'index'])->name('home.index');
 Route::get('produk/{category}', [Controllers\HomeController::class, 'produk'])->name('home.produk');
 Route::get('kategori/{category}', [Controllers\HomeController::class, 'kategori'])->name('home.kategori');

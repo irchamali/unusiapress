@@ -24,8 +24,12 @@
                             <div class="col-sm-8"><?= $edit->nama_produk;?></div>
                         </div>
                         <div class="row mt-3">
-                            <div class="col-sm-4"><b>Harga jual</b></div>
+                            <div class="col-sm-4"><b>Harga jual (cetak)</b></div>
                             <div class="col-sm-8 text-success"><h4><b>Rp<?= number_format($edit->harga_jual);?>,-</b></h4></div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-sm-4"><b>Harga jual (eBook)</b></div>
+                            <div class="col-sm-8 text-success"><h4><b>Rp<?= number_format($edit->harga_jual2);?>,-</b></h4></div>
                         </div>
                         <div class="row mt-3">
                             <div class="col-sm-4"><b>Deskripsi</b></div>

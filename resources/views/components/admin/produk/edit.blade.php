@@ -26,8 +26,12 @@
             <textarea class="form-control @error("deskripsi") is-invalid @enderror" rows="8" name="deskripsi" id="deskripsi" placeholder="">{{$edit->deskripsi}}</textarea>
         </div>
         <div class="form-group mt-3">
-            <label for="">Harga jual</label>
+            <label for="">Harga jual (cetak)</label>
             <input type="number" class="form-control @error("harga_jual") is-invalid @enderror" value="{{$edit->harga_jual}}" name="harga_jual" id="harga_jual" placeholder="">
+        </div>
+        <div class="form-group mt-3">
+            <label for="">Harga jual (eBook)</label>
+            <input type="number" class="form-control @error("harga_jual2") is-invalid @enderror" value="{{$edit->harga_jual2}}" name="harga_jual2" id="harga_jual2" placeholder="">
         </div>
         <div class="form-group mt-3">
             <label for="">Gambar <small class="text-danger ms-1">* Opsional</small></label>

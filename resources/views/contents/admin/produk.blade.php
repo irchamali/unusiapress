@@ -34,6 +34,7 @@
                                 <th>Kategori</th>
                                 <th>Nama produk</th>
                                 <th>Harga jual</th>
+                                <!-- <th>Harga jual2</th> -->
                                 <th>Tanggal</th>
                                 <th>Aksi</th>
                             </tr>
@@ -46,7 +47,8 @@
                                 <td><img src="{{url_images('gambar', $r->gambar)}}" class="img-fluid" style="width:80px;"></td>      
                                 <td>{{$r->nama_kategori}}</td>      
                                 <td>{{$r->nama_produk}}</td>    
-                                <td>Rp{{number_format($r->harga_jual)}},-</td>      
+                                <td>Rp{{number_format($r->harga_jual)}},-</td>
+                                <!-- <td>Rp{{number_format($r->harga_jual2)}},-</td>       -->
                                 <td>{{$r->created_at}}</td> 
                                 <td>
                                     <a href="javascript:void(0)" data-id="{{ $r->id }}" 
@@ -111,9 +113,16 @@
                                 @enderror
                             </div>
                             <div class="form-group mt-3">
-                                <label for="">Harga jual</label>
+                                <label for="">Harga jual (cetak)</label>
                                 <input type="number" class="form-control @error("harga_jual") is-invalid @enderror" required value="{{old("harga_jual")}}" name="harga_jual" id="harga_jual" placeholder="">
                                 @error("harga_jual")
+                                    <span class="text-danger">{{ $message }}</span>
+                                @enderror
+                            </div>
+                            <div class="form-group mt-3">
+                                <label for="">Harga jual (eBook)</label>
+                                <input type="number" class="form-control @error("harga_jual2") is-invalid @enderror" required value="{{old("harga_jual2")}}" name="harga_jual2" id="harga_jual2" placeholder="">
+                                @error("harga_jual2")
                                     <span class="text-danger">{{ $message }}</span>
                                 @enderror
                             </div>
