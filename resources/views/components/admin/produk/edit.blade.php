@@ -17,8 +17,48 @@
             @enderror
         </div>
         <div class="form-group mt-3">
-            <label for="">Nama Produk</label>
+            <label for="">Judul Buku</label>
             <input type="text" class="form-control @error("nama_produk") is-invalid @enderror" value="{{$edit->nama_produk}}" name="nama_produk" id="nama_produk" placeholder="">
+        </div>
+        <div class="form-group mt-3">
+            <label for="">Penulis</label>
+            <input type="text" class="form-control @error("penulis") is-invalid @enderror" value="{{$edit->penulis}}" name="penulis" id="penulis" placeholder="">
+        </div>
+        <div class="form-group mt-3">
+            <label for="">Penyunting</label>
+            <input type="text" class="form-control @error("penyunting") is-invalid @enderror" value="{{$edit->penyunting}}" name="penyunting" id="penyunting" placeholder="">
+        </div>
+        <div class="form-group mt-3">
+            <label for="">Edisi</label>
+            <input type="text" class="form-control @error("edisi") is-invalid @enderror" value="{{$edit->edisi}}" name="edisi" id="edisi" placeholder="">
+        </div>
+        <div class="form-group mt-3">
+            <label for="">Seri</label>
+            <input type="text" class="form-control @error("seri") is-invalid @enderror" value="{{$edit->seri}}" name="seri" id="seri" placeholder="">
+        </div>
+        <div class="form-group mt-3">
+            <label for="">Tahun Terbit</label>
+            <input type="number" class="form-control @error("thn_terbit") is-invalid @enderror" value="{{$edit->thn_terbit}}" name="thn_terbit" id="thn_terbit" placeholder="">
+        </div>
+        <div class="form-group mt-3">
+            <label for="">Jumlah Halaman</label>
+            <input type="number" class="form-control @error("jum_halaman") is-invalid @enderror" value="{{$edit->jum_halaman}}" name="jum_halaman" id="jum_halaman" placeholder="">
+        </div>
+        <div class="form-group mt-3">
+            <label for="">Tinggi Buku</label>
+            <input type="text" class="form-control @error("tinggi") is-invalid @enderror" value="{{$edit->tinggi}}" name="tinggi" id="tinggi" placeholder="">
+        </div>
+        <div class="form-group mt-3">
+            <label for="">Kategori Pembaca</label>
+            <input type="text" class="form-control @error("kategori") is-invalid @enderror" value="{{$edit->kategori}}" name="kategori" id="kategori" placeholder="">
+        </div>
+        <div class="form-group mt-3">
+            <label for="">Jenis Buku</label>
+            <input type="text" class="form-control @error("jenis") is-invalid @enderror" value="{{$edit->jenis}}" name="jenis" id="jenis" placeholder="">
+        </div>
+        <div class="form-group mt-3">
+            <label for="">Media</label>
+            <input type="text" class="form-control @error("media") is-invalid @enderror" value="{{$edit->media}}" name="media" id="media" placeholder="">
         </div>
         
         <div class="form-group mt-3">
