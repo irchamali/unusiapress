@@ -49,7 +49,7 @@
             <input type="text" class="form-control @error("tinggi") is-invalid @enderror" value="{{$edit->tinggi}}" name="tinggi" id="tinggi" placeholder="">
         </div>
         <div class="form-group mt-3">
-            <label for="">Kategori Pembaca</label>
+            <label for="">Kategori Kelompok Pembaca</label>
             <input type="text" class="form-control @error("kategori") is-invalid @enderror" value="{{$edit->kategori}}" name="kategori" id="kategori" placeholder="">
         </div>
         <div class="form-group mt-3">
@@ -59,6 +59,10 @@
         <div class="form-group mt-3">
             <label for="">Media</label>
             <input type="text" class="form-control @error("media") is-invalid @enderror" value="{{$edit->media}}" name="media" id="media" placeholder="">
+        </div>
+        <div class="form-group mt-3">
+            <label for="">Kategori Buku</label>
+            <input type="text" class="form-control @error("kategori2") is-invalid @enderror" value="{{$edit->kategori2}}" name="kategori2" id="kategori2" placeholder="">
         </div>
         
         <div class="form-group mt-3">

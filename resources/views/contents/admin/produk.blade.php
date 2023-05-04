@@ -32,9 +32,9 @@
                                 <th>No</th>
                                 <th>Gambar</th>
                                 <th>Kategori</th>
-                                <th>Nama produk</th>
+                                <th>Judul</th>
+                                <th>Penulis</th>
                                 <th>Harga jual</th>
-                                <!-- <th>Harga jual2</th> -->
                                 <th>Tanggal</th>
                                 <th>Aksi</th>
                             </tr>
@@ -47,8 +47,8 @@
                                 <td><img src="{{url_images('gambar', $r->gambar)}}" class="img-fluid" style="width:80px;"></td>      
                                 <td>{{$r->nama_kategori}}</td>      
                                 <td>{{$r->nama_produk}}</td>    
+                                <td>{{$r->penulis}}</td>      
                                 <td>Rp{{number_format($r->harga_jual)}},-</td>
-                                <!-- <td>Rp{{number_format($r->harga_jual2)}},-</td>       -->
                                 <td>{{$r->created_at}}</td> 
                                 <td>
                                     <a href="javascript:void(0)" data-id="{{ $r->id }}" 
@@ -155,7 +155,7 @@
                                 @enderror
                             </div>
                             <div class="form-group mt-3">
-                                <label for="">Kategori Pembaca</label>
+                                <label for="">Kategori Kelompok Pembaca</label>
                                 <input type="text" class="form-control @error("kategori") is-invalid @enderror" required value="{{old("kategori")}}" name="kategori" id="kategori" placeholder="">
                                 @error("kategori")
                                     <span class="text-danger">{{ $message }}</span>
@@ -172,6 +172,13 @@
                                 <label for="">Media</label>
                                 <input type="text" class="form-control @error("media") is-invalid @enderror" required value="{{old("media")}}" name="media" id="media" placeholder="">
                                 @error("media")
+                                    <span class="text-danger">{{ $message }}</span>
+                                @enderror
+                            </div>
+                            <div class="form-group mt-3">
+                                <label for="">Kategori Buku</label>
+                                <input type="text" class="form-control @error("kategori2") is-invalid @enderror" required value="{{old("kategori2")}}" name="kategori2" id="kategori2" placeholder="">
+                                @error("kategori2")
                                     <span class="text-danger">{{ $message }}</span>
                                 @enderror
                             </div>

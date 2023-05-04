@@ -25,6 +25,7 @@ class Produk extends Model
         "jum_halaman",
         "tinggi",
         "kategori",
+        "kategori2",
         "jenis",
         "media",
         "deskripsi",

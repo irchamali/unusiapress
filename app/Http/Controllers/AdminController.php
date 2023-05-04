@@ -83,12 +83,13 @@ class AdminController extends Controller
             "jum_halaman"   => "required",
             "tinggi"        => "required",
             "kategori"      => "required",
+            "kategori2"     => "required",
             "jenis"         => "required",
             "media"         => "required",
 
             "deskripsi"     => "required",
             "harga_jual"    => "required",
-            "harga_jual2"    => "required",
+            "harga_jual2"   => "required",
         ]);
 
         if($validator->passes()){
@@ -112,6 +113,7 @@ class AdminController extends Controller
                 'jum_halaman'   => $request->get("jum_halaman"),
                 'tinggi'        => $request->get("tinggi"),
                 'kategori'      => $request->get("kategori"),
+                'kategori2'      => $request->get("kategori2"),
                 'jenis'         => $request->get("jenis"),
                 'media'         => $request->get("media"),
                 
@@ -141,11 +143,12 @@ class AdminController extends Controller
             "jum_halaman"   => "required",
             "tinggi"        => "required",
             "kategori"      => "required",
+            "kategori2"     => "required",
             "jenis"         => "required",
             "media"         => "required",
             "deskripsi"     => "required",
             "harga_jual"    => "required",
-            "harga_jual2"    => "required",
+            "harga_jual2"   => "required",
         ]);
 
         if($validator->passes()){
@@ -182,11 +185,12 @@ class AdminController extends Controller
                 'jum_halaman'   => $request->get("jum_halaman"),
                 'tinggi'        => $request->get("tinggi"),
                 'kategori'      => $request->get("kategori"),
+                'kategori2'     => $request->get("kategori2"),
                 'jenis'         => $request->get("jenis"),
                 'media'         => $request->get("media"),
                 'deskripsi'     => $request->get("deskripsi"),
                 'harga_jual'    => $request->get("harga_jual"),
-                'harga_jual2'    => $request->get("harga_jual2"),
+                'harga_jual2'   => $request->get("harga_jual2"),
                 'updated_at'    => date('Y-m-d H:i:s'),
             ]);
 
