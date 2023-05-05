@@ -3,7 +3,7 @@
 <!-- promosi -->
 <div class="promosi pt-3 pb-3">
     <div class="container text-center blink_me">
-        BOOK GREAT DEALS 12.12, Get Extra Disc. Rp120.000,- Min. Purchase Rp200.000,-. Kode UNU-1926
+        UNIVERSITAS NAHDLATUL ULAMA INDONESIA | UNUSIA PRESS | KARYA TERBAIK DOSEN UNUSIA
     </div>
 </div>
 <!-- end promosi -->
@@ -15,7 +15,7 @@
     </ol> --}}
     <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
-            <img src="{{asset('assets/img/1x.jpg')}}" class="img-fluid w-100" id="gambar_slider" alt="First slide">
+            <img src="{{asset('assets/img/1z.jpg')}}" class="img-fluid w-100" id="gambar_slider" alt="First slide">
         </div>
         <div class="carousel-item">
             <img src="{{asset('assets/img/1y.jpg')}}" class="img-fluid w-100" id="gambar_slider" alt="Second slide">

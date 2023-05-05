@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>{{ $title ?? 'Unusia Press' }}</title>
+        <title>{{ $title ?? 'UNUSIA PRESS' }}</title>
         <!-- Required meta tags -->
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
