@@ -7,7 +7,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta content="Toko Codekop Menjual berbagai macam hijab, jaket, aksesoris dan pakaian islami pria dan wanita" name="description">
+        <meta content="Mahakarya terbaik para Dosen Unusia disuguhkan untuk masyarakat Indonesia." name="description">
         <meta content="{{ $title ?? 'App Toko' }}" name="keywords">
         <meta property="og:locale" content="ID_id"/>
         <meta property="og:type" content="website"/>
