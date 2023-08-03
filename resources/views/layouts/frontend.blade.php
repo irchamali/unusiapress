@@ -22,7 +22,8 @@
         <!-- navbar -->
         <nav class="navbar navbar-expand-md navbar-custom shadow-sm py-3 fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}"><b>{{ config('app.name') }}</b></a>
+                <img src="{{ asset('assets/img/favicon.png') }}" alt="Unusia Press" sizes="1px" srcset="">
+                <a class="navbar-brand" href="{{ url('/') }}">&nbsp;<b>{{ config('app.name') }}</b></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon text-dark pt-2"><i class="fas fa-bars"></i></span>
                 </button>

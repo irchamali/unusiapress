@@ -20,7 +20,7 @@
                             </div>
                         </div>
                         <div class="row mt-3">
-                            <div class="col-sm-4"><b>Nama Produk</b></div>
+                            <div class="col-sm-4"><b>Judul</b></div>
                             <div class="col-sm-8"><?= $edit->nama_produk;?></div>
                         </div>
                         <div class="row mt-3">
