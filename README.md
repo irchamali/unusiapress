@@ -1,5 +1,5 @@
 # Unusia Press
- Framework Laravel untuk Web Katalog Buku
+ Framework Laravel untuk Web Katalog Buku di Unusia
 
 ## Fitur-fitur :
 
@@ -16,16 +16,25 @@ Username: admin@gmail.com
 Password: secret
 ```
 
-## Tahapan Instalasi
+## Tahapan Instalasi :
 
-- Git Clone 
-- Add .env
-- Composer Update
-- Key Generate 
-'''
+- Lakukan kloning sc dengan perintah: 
+```
+git clone https://github.com/irchamali/unusiapress.git
+```
+- Tambahkan file .env dan copas dari env.example, lalu sesuaikan database dll:
+```
+touch .env
+```
+- Lakukan pembaruan Composer agar update pada library:
+```
+composer update
+```
+- Lakukan generate pada key:
+```
 php artisan key:generate
-'''
-- Jalankan 
-'''
+```
+- Jalankan laravel server:
+```
 php artisan serve
-'''
+```
