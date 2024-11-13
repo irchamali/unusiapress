@@ -1,5 +1,5 @@
 # Unusia Press
- Katalog Buku yang dibangun dengan PHP Framework: Laravel 8
+ Framework Laravel untuk Web Katalog Buku
 
 ## Fitur-fitur :
 
@@ -11,5 +11,21 @@
 
 ## Untuk Login Admin :
 
+```
 Username: admin@gmail.com
 Password: secret
+```
+
+## Tahapan Instalasi
+
+- Git Clone 
+- Add .env
+- Composer Update
+- Key Generate 
+'''
+php artisan key:generate
+'''
+- Jalankan 
+'''
+php artisan serve
+'''

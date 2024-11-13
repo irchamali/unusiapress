@@ -82,7 +82,7 @@
                         <br><br>
                     </div>
                     <div class="col-sm-4">
-                        <h4>Follow Us</h4>
+                        <h4>Media Sosial</h4>
                         <a href="#" class="text-terhubung"><i class="fab fa-facebook"></i></a>
                         <a href="#" class="text-terhubung"><i class="fab fa-instagram"></i></a>
                         <a href="#" class="text-terhubung"><i class="fab fa-news"></i></a>
@@ -95,9 +95,9 @@
         </div>
         <div class="copyright">
             <div class="container text-center">
-                Copyright &copy; <?= date('Y');?> {{ config('app.name') }} 
+                Copyright &copy; <?= date('Y');?>  
                 <br>
-                Enjoy Coding!
+                {{ config('app.name') }}
             </div>
         </div>
         <!-- end footer -->
